@@ -1,9 +1,6 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-import plotly.express as px
-import json
-import os
 
 def load_transaction(file): #This is used to Clean up the data before proceeding with the Analysis
     df = pd.read_csv(file)
@@ -41,6 +38,7 @@ def main():
                 credit = credit_df["Amount"].sum()
                 st.write(f"Debit: {debit} AED")
                 st.write(f"Credit: {credit} AED")
+
 
 
 
